@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Movie Details Container */
+.dt-d {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie Title */
+.dt-head {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+/* Movie Information Section */
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-text {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.movie-text p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.dt-des {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Hero Image Section */
+.hero-image-container {
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Showtimes Section */
+.dt-head3 {
+  font-size: 1.5rem;
+  margin: 30px 0 15px;
+  color: #222;
+  text-align: center;
+}
+
+.dt-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dt-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.showtime-details {
+  flex: 1;
+}
+
+.showtime-text {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Book Ticket Button */
+.book-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.book-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-poster {
+    width: 80%;
+  }
+
+  .hero-image {
+    width: 90%;
+  }
+
+  .dt-li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .book-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
